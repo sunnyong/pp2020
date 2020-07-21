@@ -1,0 +1,153 @@
+@charset "utf-8";
+/*web font*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans:400,700');
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+1body{line-height: 1}
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+ul,ol {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;
+	color:inherit;
+}
+table {
+    border-collapse: collapse; border-spacing: 0;
+}
+input,select{vertical-align: middle; border: 0; outline: 0; appearance:none; border-radius: 0;}
+button{border: 0; outline: 0; cursor: pointer;}
+.clearfix::before{content:''; display:block;}
+.clearfix::after{content:''; display:block; clear:both;}
+*,*::after, *::before{box-sizing: border-box; }
+img,video{border:0; max-width: 100%;}
+
+html,body{width: 100%; 1height: 100%; font-size: 14px; font-family: 'Noto Sans KR', 'Noto Sans', sans-serif; overflow: auto;  }
+.inner{max-width: 960px; margin: 0 auto;  }
+.blind{position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip:rect(0 0 0 0)}
+h2{font-weight: 300; font-size: 30px; text-align: center; margin-top: 150px; margin-bottom: 50px; }
+
+/*header*/
+#header{padding-top: 25px; text-align: center; }
+#header h1{width: 80px; display: inline-block; }
+#header .gnb{width: 400px;  height: 36px; padding-top: 25px; margin-left: auto; margin-right: auto; overflow: hidden; padding-bottom: 45px;  }
+#header .gnb li{float: left; width: 25%; text-transform: uppercase;}
+
+#header.fixed{position: fixed; left: 0; top: 0; width: 100%; height: 70px; border-bottom: 1px solid #eee; background: rgba(255,255,255,.93); z-index: 10000; }
+#header.fixed .gnb{position: absolute; top: 0; right: 0}
+
+.menu{display: none;}
+.top_img{height: 800px; background: url(../images/top_img.jpg) no-repeat center center; background-size: cover;}
+
+/*gallery*/
+#work .gallery{max-width: 960px; margin: 0 auto; }
+#work .gallery .all{position: relative; width: 200px; margin: 20px; overflow: hidden; box-shadow: 3px 3px 3px rgba(0,0,0,.1); border-radius: 8px; background: #111; transition: all .5s; }
+
+#work .gallery .all img{transition: all .5s; display: block; }
+#work .gallery .all .text{position: absolute; left: 50%; top: 150%; transform: translate(-50%, -50%); text-align: center; width: 100%; color: #fff; transition: all .5s; } 
+#work .gallery .all .text h4{font-size: 18px; font-weight: 500; padding: 10px 0; }
+#work .gallery .all .text p{font-size: 13px; font-weight: 300; padding: 4px 0 14px 0; }
+
+#work .gallery .all:hover{transform: scale(1.05,1.05); box-shadow: 6px 6px 6px rgba(0,0,0,.3)}
+#work .gallery .all:hover img{opacity: 0.2}
+#work .gallery .all:hover .text{top: 50%}
+
+/*pop up*/
+.pop{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.7); z-index: 1000; overflow: auto; }
+.pop_in{margin: 0 auto; max-width: 900px; height: 1500px; background: #eee; padding: 50px; width: 80%}
+.close{position: fixed; right: 10%; top: 50px; color: #fff; display: block; width: 30px; height: 30px; }
+.close:before, .close:after{content: ''; display: block; width: 30px; height: 1px; background: #fff; position: absolute; left: 0; top: 50%;}
+.close:before{transform: rotate(-45deg); }
+.close:after{transform: rotate(45deg); }
+
+/*skill*/
+.skill_inner{text-align: center; }
+.skill_wrap{width: 45%; height: 25px; margin: 2.5%; float: left; background: #eee; }
+#skill .graph .bar{width: 0%; height: 25px; background: #333; }
+.graph_text{overflow: hidden; font-size: 12px; padding-top: 5px; }
+.graph_text li:first-child{float: left; }
+.graph_text li:last-child{float: right; }
+
+/*about*/
+#about .about_profile{ border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 10px;  }
+#about .about_profile .picture{float: left; width: 49%; height: 300px; overflow: hidden; margin: 0.5%; background:url(../images/top_img.jpg)no-repeat center center; background-size: cover;}
+#about .about_profile .profile{float: right; width: 49%; height:300px; background: #eee; display: inline-block; margin: 0.5%; padding: 10%}
+#about .about_profile .profile span{font-weight: 600; display: inline-block; padding-right: 10px}
+#about .intro{float: left; width: 100%; padding-bottom: 300px; margin: 0.5%; border-top: 1px solid #333; margin-top: 1%}
+#about h3{text-align: center; font-weight: 200; font-size: 20px; color: #999; padding: 30px 0;}
+#about h3 span{font-weight: 400; color:#333}
+
+
+
+/*contact*/
+.contact{position:relative; }
+.contact ul{padding: 100px;text-align: center}
+.contact ul li{margin-right: 100px; display: inline-block; text-align: center}
+.contact ul li:last-child{margin-right: 0;}
+.contact ul li .icon{width: 100px; height: 100px; background: #c94929; border-radius: 50%; display: inline-block; margin-bottom: 10px; }
+.contact ul li i{color: #fff; font-size: 40px; line-height: 90px;}
+
+/*footer*/
+#footer{background: #333; color: #fff; font-weight: 200; text-align: center; font-size: 12px; padding-top: 50px; padding-bottom: 20px; }
+
+
+@media (min-width:770px) and (max-width:850px){
+    #header .gnb li{float: right; width: 22%;}
+}/*내비 아래로 내려왓을때*/
+
+
+
+@media (max-width:769px){
+    .menu{display: block; width: 40px; height: 40px; position: absolute; top: 15px ; right: 15px}
+    #header{padding-top: 23px; height: 70px; text-align: left}
+    #header h1{margin-left: 10px;}
+    #header .gnb{width: 100%; background: #fff; position: absolute; left: 0; top: 70px; height: 200px; display: none; text-align: center; padding-bottom: 200px;}
+    #header .gnb li{float: none; width: 100%; line-height: 40px; z-index: 1000;}
+    #header.fixed .gnb{top: 70px; background: rgba(255,255,255,.95) }
+    .inner{max-width: 720px; width: 98% }
+    .pop_in{width: 100%} 
+}
+
+
+
+@media (max-width:480px){
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*mobile*/
+.main{padding: 5% 10px; height: 100%}
+.main .work{position: relative; text-align: center; margin: 1%; }
+.main .work img{display: block; width: 100%; }
+.main .work a{display: block; }
+.main .work .caption{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.3); transition: all .5s}
+.main .work .caption .work_title{position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+.main .work .caption .work_title h1{font-size: 26px; font-weight: 400; color: transparent; transition: all 1s; padding: 20px;  }
+.main .work .caption .work_title h1:before{content: ''; width: 0; height: 1px; background: #fff; transition: all .5s; position: absolute; top: 0; left: 0;}
+.main .work .caption .work_title h1:after{content: ''; width: 0; height: 1px; background: #fff; transition: all .5s; position: absolute; bottom: 0; right: 0;}
+.main .work .caption:hover{background: rgba(0,0,0,.8)}
+.main .work .caption:hover .work_title h1{color: #fff}
+.main .work .caption:hover h1:before{width: 70%}
+.main .work .caption:hover h1:after{width: 70%}
+
+/*tablet*/
+@media screen and (min-width:760px){
+    .main .work{width: 48%; float: left; }
+}
+
+/*pc*/
+@media screen and (min-width:960px){
+    .main{padding-left: 250px; }
+    .main .work{width: 31.3333333%; }
+}

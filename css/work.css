@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+/* ---------------------------------
+LAYOUT CSS
+--------------------------------- */
+#header h1{width:50px; top: 45px;}
+.hamburger .bar {background-color: #000; height: 1px;}
+.hamburger.active .bar{background-color: #fff;}
+
+/* ---------------------------------
+INTRO CSS
+--------------------------------- */
+#work{padding: 130px 55px 55px 55px; position: relative;}
+#work #intro .cate{display: inline-block; transform: rotate(-90deg); margin-top: 40px; margin-left: -50px; transition: all .3s;}
+#work #intro .top_wrap{margin-top: -35px; margin-bottom: 50px;}
+#work #intro h2{font-size: 40px; font-weight: 700; margin-bottom: 20px;}
+
+/* ---------------------------------
+LIST CSS
+--------------------------------- */
+#work #list ul{display: flex; flex-wrap: wrap; align-content : flex-start;}
+#work #list ul li{width: 100%; margin:1%; margin-bottom: 15%; font-size: 12px;}
+#work #list ul li p{padding: 5px; line-height: 1.4; color: #333;}
+#work #list ul li a{display: block; transition: all .5s; position: relative; background-repeat: no-repeat; background-size: 100% auto; background-position: center top;}
+#work #list ul li.horizon a{background-size: auto 100%;}
+#work #list ul li a span{position: absolute; top: 0; left: 0; display: block; font-size: 30px; font-weight: 700; color: #2c2c2c; top: 5%; left: 5%;}
+#work #list ul li a img{display: block; }
+
+#work #list ul .wedding a{background-image: url(../images/t_wedding.jpg);}
+#work #list ul .naeil_d a{background-image: url(../images/t_naeil_d.jpg);}
+#work #list ul .dolphins a{background-image: url(../images/t_dolphins.jpg);}
+#work #list ul .naeil_r a{background-image: url(../images/t_naeil_r.jpg);}
+#work #list ul .pp2019 a{background-image: url(../images/t_pp2019.jpg);}
+#work #list ul .heyri a{background-image: url(../images/t_heyri.jpg);}
+#work #list ul .volvo a{background-image: url(../images/t_volvo.jpg);}
+#work #list ul .lush a{background-image: url(../images/t_lush.jpg);}
+#work #list ul .spc a{background-image: url(../images/t_spc.jpg);}
+#work #list ul .pp2018 a{background-image: url(../images/t_pp2018.jpg);}
+
+#work #list ul li a:hover{background-size: 103% auto;}
+#work #list ul li a:hover:before{content: ''; display: block; width: 100%; height: 100%; background: rgba(0,0,0,.3); position: absolute; top: 0; left: 0;}
+#work #list ul li a:hover span{display: none;}
+#work #list ul li a:hover img{opacity: 0;}
+#work #list ul li.horizon a:hover{background-size: auto 102%;}
+
+/* ---------------------------------
+반응형 CSS
+--------------------------------- */
+/* 태블릿 */
+@media screen and (min-width: 768px){
+    #work #list ul li{width: 48%; margin-bottom: 5%;}
+}
+
+/* 노트북 */
+@media screen and (min-width: 1200px){
+    #work #intro h2{font-size: 50px;}
+    #work #intro .top_wrap p{font-size: 20px; line-height: 1.5;}
+    #work #intro .cate{transform: rotate(0deg); margin: 0;}
+    #work #intro .top_wrap{margin-top: 50px;}
+    #work #list ul{margin: 50px -1.6%;}
+    #work #list ul li{width: 30%; margin:1.66%; margin-bottom: 5%; font-size: 12px;}
+    #work #list ul li p{font-size: 16px;}
+    #work #list ul li a span{font-size: 30px;}
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1900px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+

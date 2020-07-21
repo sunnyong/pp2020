@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.top{height: 350px; background: url(../images/girl.png) no-repeat center top; background-size: cover; }
+.content_header{width: 96%; margin: auto; height: 100%; position: relative; }
+.content_header h2{color: #4b4848; font-size: 26px; font-weight: 500; background: rgba(0,0,0,.2); padding: 20px; text-transform: uppercase; 1line-height: 30px; position: absolute; left: 0; bottom: 0;}
+
+.content{color: #4b4848; padding: 50px 30px; }
+.content h3{font-size: 20px; font-weight: 500; margin-top:60px; margin-bottom: 10px; }
+.content p{line-height: 180%; font-family: '나눔바른고딕'; font-weight: 300}
+
+.map{height: 1000px; }
+.address, .tel{font-weight: 600;}
+
+/*tablet*/
+@media screen and (min-width:760px){
+.top{background: url(../images/top_img_original02.jpg) no-repeat center top; background-size: cover; }
+}
+
+/*pc*/
+@media screen and (min-width:960px){
+.top{background: url(../images/top_img_original01.jpg) no-repeat center top; background-size: cover; }
+    
+}

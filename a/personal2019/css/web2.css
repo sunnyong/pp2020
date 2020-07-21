@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*common*/
+.view2 .viewmore p{color: #333; }
+.point .zigzag{bottom: 27%; } 
+.point .square{ display: none; }
+
+/*header*/
+#header{background: url(../images/web_bg2.jpg) no-repeat center; background-size: cover; }
+
+/*menu3*/
+.menu3_wrap>h1{color: #333; background: url(../images/publishing2.png) no-repeat center; background-size: cover; }
+.menu3 li{color: #ccc}
+
+.menu3 .on{color: #fff; }
+
+/*web*/
+.web_text h1{color: #eee; }
+.web_text h1 b{color: #f3ede1; }
+.web_text p{color: #eee; }
+.web_text h3{color: #eee; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

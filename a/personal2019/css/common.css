@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*web font*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Jua&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&subset=korean');
+
+/*common*/
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 12px; min-width: 1800px; overflow: auto; overflow-x: hidden; }
+.inner{padding: 0 12%; }
+
+.view{width: 190px; height: 40px; background: #f3ede1; padding: 9px 20px; cursor: pointer; display: inline-block; margin-top: 60px; }
+.viewmore{background: transparent; display: block; border: 1px solid #000; height: 40px; width: 190px; padding-top: 5px; padding-left: 20px; }
+.viewmore p{display: inline-block; float: left; font-size: 16px;  }
+.viewmore img{width: 50px; display: inline-block; float: left; margin-top: 6px; margin-left: 15px;  }
+
+.view:hover img{margin-left: 25px; transition: all .3s }
+
+/*header*/
+#header{background: #013b7c; width: 100%; height: 100vh; position: relative; }
+.top{padding-top: 90px; }
+.logo{float: left; }
+.logo img{width: 120px; }
+.menu{float: right; }
+.btn_open img{height: 33px;  }
+.gnb{position: fixed; left: 100%; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,1); z-index: 9900; padding-top: 200px; padding-left: 670px; }
+.gnb a{color: #fff; font-size: 70px; line-height: 120px; font-family: 'Do Hyeon', sans-serif; letter-spacing: 5px; }
+.gnb a:hover{color: #013b7c; transition: all .2s; }
+.gnb li b{font-size: 36px; color: #fff; margin-left: 30px; font-family: 'Nanum Gothic'; letter-spacing: 0px; line-height: 0; display: none; }
+.gnb a:hover b{display: inline-block; }
+.btn_close{position: absolute; right: 185px; top: 50px; display: block; cursor: pointer; }
+
+.menu2{font-family: 'Do Hyeon', sans-serif; font-size: 85px; font-weight: 400; color: #fff; font-style: oblique; margin-top: 100px; margin-left: 50px;  }
+.menu2 li a{display: inline-block; }
+.menu2 li a:hover{color: #000; transition: color .2s; }
+
+.point li{position: absolute;  }
+.point .line{top: -110px; right: 28%; }
+.point .line span{display: inline-block; background: #fff; height: 0px; transform: rotate(-315deg); animation:line 7s infinite; }
+.point .line span:first-of-type{width: 2px; }
+.point .line span:last-of-type{width: 1px; margin-left: 30px; margin-bottom: 10px; }
+
+.point .circle{bottom: 450px; right: 20%; }
+.point .circle span{display: inline-block; background: #fff; width: 60px; height: 60px; border-radius: 50%; }
+.point .circle span:last-of-type{width: 40px; height: 40px; background: #fff100; margin: -50px 20px;  }
+
+.point .zigzag{bottom: 30%; right: 30%; transform: rotate(-380deg); width: 80px; } 
+.point .square{bottom: 35%; right: 45%; transform: rotate(200deg); width: 50px; }
+
+
+/*contact*/
+.casting{cursor: pointer; }
+#modal{width: 100%; height: 100%; position: fixed; background: rgba(0,0,0,.9); z-index: 9999999; top: 0; text-align: center; overflow: hidden; top: 0; right: 100%; }
+.modal_poster{width: 1000px; display: inline-block;   }
+.modal_close{position: absolute; top: 90px; right: 230px;  cursor: pointer;}
+
+/*process*/
+#process{width: 100%; height: 100%; position: fixed; background: rgba(0,0,0,.9); z-index: 9999999; top: 0; text-align: center; top: 0; right: 100%; overflow-y: scroll}
+.modal_poster2{width: 1600px; display: inline-block; margin-top: 100px;   }
+.modal_close2{position: absolute; top: 100px; right: 100px;  cursor: pointer; }
+
+/*top*/
+#top{position: fixed; left: 95%; top: 90%; width: 45px; height: 45px; background: #fff100; border-radius: 50%; text-align: center; z-index: 999; display: none; }
+#top img{width: 13px; display: inline-block; margin-top: 12px; }
+
+/*keyframes*/
+@keyframes line{
+    0%{height: 0px; }
+    30%{height: 600px; }
+    50%{height: 600px;}
+    75%{height: 600px;}
+    100%{height: 600px;}
+}
+
+
+
+
+
+

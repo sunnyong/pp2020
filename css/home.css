@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* ---------------------------------
+LAYOUT CSS
+--------------------------------- */
+html, body{background: #000;}
+
+/* ---------------------------------
+HOME Section CSS
+--------------------------------- */
+#sec_home{width: 100%; height: 100%; background: #000; color: #fff; position:relative; box-sizing: border-box;}
+#sec_home .type-wrap{display: inline; font-size: 30px; font-weight: 300; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#sec_home .home_bottom{position: absolute; left: 0; bottom: 0; width: 100%; padding: 55px;}
+#sec_home .home_bottom p{display: inline-block;}
+#sec_home .home_bottom p:first-of-type{float: left; transform: rotate(-90deg) translateY(-55px) translateX(55px); font-weight: 100;}
+#sec_home .home_bottom p:last-of-type{float: right;}
+
+
+/* ---------------------------------
+ABOUT Section CSS
+--------------------------------- */
+#sec_about .about_inner{padding: 55px; background: #fff;}
+#sec_about .about_left h2{font-size: 40px; font-weight: 800; margin: 50px 0; line-height: 1.25em;}
+#sec_about .about_left p{font-size: 20px; margin-bottom: 50px;}
+#sec_about .about_left mark{background-color: #000; color: #fff;}
+#sec_about .about_left .more{font-size: 30px; font-weight: 800; position: relative; z-index: 2; margin-left: 17px;}
+#sec_about .about_left .more:before{content: ''; display: block; width: 30px; height: 30px; background: #e9e9e9; border-radius: 30px; position: absolute; left: -15px; top: 11px; z-index: -1; transition: all .3s;}
+#sec_about .about_left .more:hover:before{width: 108px;}
+#sec_about .about_right{margin: 50px -55px;}
+#sec_about .about_right .img_wrap{position: relative;}
+#sec_about .about_right .img_wrap:before{content: '@kimsunny'; display: inline-block; position: absolute; right: 5px; bottom: -16px; font-size: 14px;}
+
+
+/* ---------------------------------
+WORK Section CSS
+--------------------------------- */
+#sec_work .work_inner{background: #fafafa; padding: 55px;}
+#sec_work .work_slide{position: relative;}
+#sec_work .work_slide_nav{margin: 50px 0;}
+#sec_work .work_slide_nav li{display: block; width: 100% !important; color: #d1d1d1; font-size: 40px; font-weight: 800; letter-spacing: 0.02em; display: block;}
+#sec_work .work_slide_nav li a{display: block; line-height: 1.5;}
+#sec_work .work_slide_nav li.slick-current{color: #2c2c2c;}
+#sec_work .work_slide_nav .slick-track{transform: translate3d(0px, 0px, 0px) !important;}
+#sec_work .work_slide_for li{font-size: 20px;}
+#sec_work .work_slide_for li mark{background: none; text-decoration: underline;}
+#sec_work .work_slide_for .slick-arrow{position: absolute; right: 0; font-size: 0; width: 50px; height: 50px; cursor: pointer;}
+#sec_work .work_slide_for .slick-arrow.slick-next{top: -250px; background: url("/images/right.png") no-repeat center; background-size: 100% auto;}
+#sec_work .work_slide_for .slick-arrow.slick-prev{top:-90px; background: url("/images/right.png") no-repeat center; background-size: 100% auto; transform: rotate(180deg);}
+#sec_work .slide_count{position: absolute; right: -2px; top: 55px; font-size: 30px; letter-spacing: 0.1em; font-weight: 100;}
+#sec_work .more{font-size: 35px; font-weight: 600; position: relative; z-index: 2; display: inline-block; margin-top: 50px; margin-left: 20px;}
+#sec_work .more:before{content: ''; display: block; width: 40px; height: 40px; background: #e9e9e9; border-radius: 40px; position: absolute; left: -15px; top: -1px; z-index: -1; transition: all .3s;}
+#sec_work .more:hover:before{width: 110%;}
+
+/* ---------------------------------
+CONTACT Section CSS
+--------------------------------- */
+#sec_contact .contact_inner{background: #000; color: #fff; padding: 55px;}
+#sec_contact .contact_info{overflow: hidden; margin: 25px 0;}
+#sec_contact .contact_info li{text-align: left; letter-spacing: 0.05em; margin: 0 10px; margin-bottom: 30px; font-size: 20px;}
+#sec_contact .info_title{color: #a9a9a9; font-weight: 100; margin-bottom: 10px; font-size: 18px;}
+#sec_contact .info_value{font-weight: 400;}
+#sec_contact .more{font-size: 35px; font-weight: 600; position: relative; z-index: 2; display: inline-block; margin-left: 25px; letter-spacing: 0.05em;}
+#sec_contact .more:before{content: ''; display: block; width: 40px; height: 40px; background: #333; border-radius: 40px; position: absolute; left: -15px; top: 2px; z-index: -1; transition: all .3s;}
+#sec_contact .more:hover:before{width: 120%;}
+#sec_contact .contact_bottom span{display: block; width: 1px; height: 70px; background: #fff; margin-bottom: -12px;}
+#sec_contact .contact_bottom p{font-weight: 100; text-align: right;}
+
+#footer{margin: 55px 0;}
+#footer p{color: #fff;}
+
+/* ---------------------------------
+반응형 CSS
+--------------------------------- */
+/* 태블릿 */
+@media screen and (min-width: 768px){
+    #sec_about .about_inner .about_wrap{display: flex;}
+    #sec_about .about_left{padding-right: 5%;}
+    #sec_about .about_left p{font-size: 18px;}
+    #sec_about .about_right{margin: 0; padding-top: 60px;}
+}
+
+/* 노트북 */
+@media screen and (min-width: 1200px){
+    #sec_about .about_left h2{font-size: 60px; }
+    #sec_about .about_left p{font-size: 20px;}
+    #sec_work .work_slide_nav{margin: 80px 0;}
+    #sec_work .work_slide_nav li{font-size: 30px;}
+    #sec_work .work_slide_nav li.slick-current{font-size: 100px; color: #2c2c2c;}
+    #sec_work .work_slide_for .slick-arrow.slick-next{top: -350px;}
+    #sec_work .work_slide_for .slick-arrow.slick-prev{top: -100px;}
+    #sec_work .more{font-size: 40px; margin: 80px 0 50px 0;}
+    #sec_work .slide_count{top: 100px}
+    #sec_contact .contact_info{display: flex; justify-content: left; margin: 50px 0;}
+    #sec_contact .contact_info li{margin-right: 50px; font-size: 25px;} 
+    #sec_contact .more{font-size: 40px;}
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1900px){
+    #sec_home .type-wrap{font-size: 60px;}
+    #sec_about .about_left{padding-right: 10%; width: 70%;}
+    #sec_about .about_left h2{font-size: 70px;}
+    #sec_about .about_left p{font-size: 26px;}
+    #sec_about .about_right{padding-top: 70px;}
+    #sec_work .work_slide_for li{font-size: 26px;}
+    #sec_work .more{font-size: 50px; }
+    #sec_work .more:before{width: 50px; height: 50px; border-radius: 50px;}
+    #sec_contact .more{font-size: 50px;}
+    #sec_contact .more:before{width: 50px; height: 50px; border-radius: 50px; top: 5px;}
+}
+

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+/* ---------------------------------
+LAYOUT CSS
+--------------------------------- */
+#header h1{width:50px; top: 45px;}
+.hamburger .bar {background-color: #000; height: 1px;}
+.hamburger.active .bar{background-color: #fff;}
+
+/* ---------------------------------
+INTRO CSS
+--------------------------------- */
+#about{padding: 130px 55px 55px 55px; position: relative;}
+#about #intro .cate{display: inline-block; transform: rotate(-90deg); margin-top: 40px; margin-left: -50px; transition: all .3s;}
+#about #intro .top_wrap{margin-top: -30px;}
+#about #intro .img_wrap{width: 300px; height: 300px; border-radius: 50%; background: url(../images/sunny.jpg) no-repeat center top; background-size: cover; margin: 0 auto;}
+#about #intro .type-wrap{font-size: 40px; font-weight: 700; letter-spacing: 0.05em; min-height: 100px;}
+#about #intro .intro_txt_wrap{font-size: 20px; line-height: 1.5; margin: 50px 0; }
+
+
+/* ---------------------------------
+RESUME CSS
+--------------------------------- */
+#about #resume h3{font-size: 30px; font-weight: 400; letter-spacing: -0.1em; border-bottom: 1px solid #eee; margin-bottom: 30px; padding-bottom: 10px;}
+#about #resume > div + div{margin-top: 50px;}
+#about #resume h3 strong{font-family: 'Montserrat', sans-serif; font-size: 50px; font-weight: 100; margin-right: 15px;}
+#about .resume_tit{text-indent: 15px; position: relative; margin-top: 30px; } 
+#about .resume_tit:before{content: ''; width: 7px; height: 7px; background: #333; display: block; border-radius: 50%; position: absolute; left: 0; top: 6px;}
+#about .resume_con{text-indent: 15px; font-size: 14px; margin-top: 5px;}
+#about .resume_con span{color: #888; margin-right: 10px;}
+#about .skill_inner{display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 30px; width: 93%}
+#about .graph{width: 43%; margin-top: 20px; }
+#about .graph p, #about .skill_etc{letter-spacing: 0.15em;}
+#about .graph .bar{display: block; width: 10%; height: 1px; background: #333; position: relative; margin-top: 10px; transition: all 2s;}
+#about .graph .bar span{width: 7px; height: 7px; background: #333; border-radius: 50%; display: block; position: absolute; top: -3px; right: 0;}
+#about .graph .bar span:after{content: ''; font-size: 10px; position: absolute; top: -4px; right: -30px;}
+#about .graph.coding .bar span:after{content: '95%';}
+#about .graph.photoshop .bar span:after{content: '90%';}
+#about .graph.illust .bar span:after{content: '80%';}
+#about .graph.word .bar span:after{content: '90%';}
+#about .graph.editplus .bar span:after{content: '95%';}
+#about .graph.brackets .bar span:after{content: '95%';}
+#about .graph.github .bar span:after{content: '85%';}
+#about #resume .more_wrap{text-align: center;}
+#about #resume .more{font-size: 35px; font-weight: 600; position: relative; z-index: 2; display: inline-block; }
+#about #resume .more:before{content: ''; display: block; width: 40px; height: 40px; background: #e9e9e9; border-radius: 40px; position: absolute; left: -15px; top: -1px; z-index: -1; transition: all .3s;}
+#about #resume .more:hover:before{width: 110%;}
+
+
+/* ---------------------------------
+반응형 CSS
+--------------------------------- */
+/* 태블릿 */
+@media screen and (min-width: 768px){
+    #about{width: 740px; margin: 0 auto;}
+    #about #intro .cate{transform: rotate(0deg); margin-left: 0px;}
+    #about #intro .top_wrap{display: flex; margin-top: 0;}
+    #about #intro .img_wrap{margin:0; margin-right: 50px; width: 200px; height: 220px;}
+    #about #intro .type-wrap{align-self: center; font-size: 36px;}
+}
+
+/* 노트북 */
+@media screen and (min-width: 1200px){
+    #about{width: 1000px;}
+    #about #intro .img_wrap{width: 300px; height: 300px;}
+    #about #intro .type-wrap{font-size: 50px;}
+    #about #resume > div + div{margin-top: 80px}
+    #about #resume h3{font-size: 40px;}
+    #about #resume h3 strong{font-size: 60px;}
+    #about .resume_tit:before{top: 10px;}
+    #about .graph p, #about .skill_etc{font-size: 20px;}
+    #about .resume_tit{margin-top: 50px; font-size: 20px;} 
+    #about .resume_con{text-indent: 15px; font-size: 16px; margin-top: 10px;}
+    #about #resume .more{font-size: 40px;}
+    #about #resume .more:hover:before{width: 108%;}
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1900px){
+    #about{width: 1400px;}
+    #about #intro .cate{font-size: 24px;}
+    #about #intro .img_wrap{width: 350px; height: 350px;}
+    #about #intro .type-wrap{font-size: 70px;}
+    #about #intro .intro_txt_wrap{font-size: 28px; margin: 100px 0;}
+    #about #resume > div + div{margin-top: 100px}
+    #about #resume h3{font-size: 50px;}
+    #about #resume h3 strong{font-size: 80px;}
+    #about .graph p, #about .skill_etc{font-size: 28px; margin-top: 50px;}
+    #about .resume_tit{font-size: 28px;} 
+    #about .resume_con{font-size: 20px;}   
+    #about #resume .more{font-size: 50px;}
+    #about #resume .more:before{width: 60px; height: 60px; border-radius: 60px;}
+    #about #resume .more:hover:before{width: 106%;}
+}
+
+
+
+
+
+
+
+
+
+
+

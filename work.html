@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>WORK@kimsunny</title>
+    <link rel="shortcut icon" href="images/eunsun.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/work.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="js/typed.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            var d = new Date();
+            var currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일"; 
+            var result = document.getElementById("time-result"); 
+            result.innerHTML = currentDate + " 최종 업데이트 되었습니다."; 
+        }
+    </script>
+</head>
+<body>
+    <div id="work">
+        <header id="header">
+            <h1><a href="javascript:history.back();"><img src="images/back_bl.png" alt="뒤로가기"></a></h1>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="overlay">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="intro">
+            <p class="cate">work</p>
+            <div class="top_wrap">
+                <h2>작업리스트</h2>
+                <p>2018년 03월부터 현재까지 역순입니다.</p><p id="time-result"></p>
+            </div>
+        </section>
+        <section id="list">
+            <ul>
+                <li class="wedding"><a href="https://sunnyong.github.io/invitation/" target="_blank"><img src="images/list_wedding.jpg" alt="모바일청첩장"><span>모바일<br>청첩장</span></a><p>2020.07 모바일<br>기획,디자인,코딩 100%</p></li>
+                <li class="naeil_d"><a href="http://www.naeiltour.co.kr/pub/list.html" target="_blank"><img src="images/naeil.jpg" alt="내일투어유지보수"><span>내일투어 유지보수</span></a><p>2019.03 ~ 모바일,pc<br>사이트리뉴얼/유지보수</p></li>
+                <li class="dolphins"><a href="http://test.dolphinstravel.co.kr/pub/list.html" target="_blank"><img src="images/dolphins.jpg" alt="호텔돌핀스"><span>호텔돌핀스 사이트 리뉴얼</span></a><p>2019.03 pc<br>사이트리뉴얼</p></li>
+                <li class="naeil_r"><a href="http://www.naeiltour.co.kr/main/index.asp" target="_blank"><img src="images/naeil.jpg" alt="내일투어"><span>내일투어 사이트 리뉴얼</span></a><p>2019.03 pc<br>사이트리뉴얼</p></li>
+                <li class="pp2019 horizon"><a href="a/personal2019/index.html" target="_blank"><img src="images/pp2019.jpg" alt="포폴2019"><span>개인포폴2</span></a><p>2020.07 pc<br>기획,디자인,코딩 100%</p></li>
+                <li class="heyri"><a href="a/heyri/index.html" target="_blank"><img src="images/heyri.jpg" alt="헤이리"><span>헤이리</span></a><p>2020.07 반응형<br>기획,디자인,코딩 100%</p></li>
+                <li class="volvo"><a href="a/volvo/index.html" target="_blank"><img src="images/volvo.jpg" alt="볼보"><span>볼보</span></a><p>2020.07 반응형<br>기획,디자인,코딩 100%</p></li>
+                <li class="lush"><a href="a/lush/index.html" target="_blank"><img src="images/lush.jpg" alt="러쉬"><span>러쉬</span></a><p>2020.07 pc<br>기획,디자인,코딩 100%</p></li>
+                <li class="spc"><a href="a/spc/index.html" target="_blank"><img src="images/spc.jpg" alt="spc"><span>SPC</span></a><p>2020.07 pc<br>기획,디자인,코딩 100%</p></li>
+                <li class="pp2018 horizon"><a href="a/personal/index.html" target="_blank"><img src="images/pp2018.jpg" alt="포폴2018"><span>개인포폴1</span></a><p>2020.07 pc<br>기획,디자인,코딩 100%</p></li>
+            </ul>
+        </section>
+        <footer id="footer">
+            <a href="index.html" class="footer_logo"><img src="images/logo_bl.png" alt="메인페이지"></a>
+            <p>copyright© kimsunny2020</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* ---------------------------------
+LAYOUT CSS
+--------------------------------- */
+html,body{background: #000;}
+#header h1{width:50px; top: 45px;}
+.hamburger .bar {height: 1px;}
+
+/* ---------------------------------
+contact_inner CSS
+--------------------------------- */
+#contact{color: #fff; padding: 130px 55px 55px 55px;}
+#contact #intro .cate{display: inline-block; transform: rotate(-90deg); margin-top: 50px; margin-left: -60px; transition: all .3s;}
+#contact #intro .top_wrap{margin-top: -45px; margin-bottom: 50px;}
+#contact #intro h2{font-size: 40px; font-weight: 700; margin-bottom: 20px;}
+#contact #information .contact_info{overflow: hidden; margin-top: 50px;; display: inline-block;}
+#contact #information .contact_info li{text-align: left; letter-spacing: 0.05em; margin-bottom: 30px; font-size: 20px;}
+#contact #information .info_title{color: #a9a9a9; font-weight: 100; margin-bottom: 10px;}
+#contact #information .info_value{font-weight: 400;}
+#contact #information .info_value mark{background: #fff; position: relative;}
+#contact #information .info_value mark:before{content: 'april0792@naver.com'; display: block; width: 10%; height: 100%; background: #fff; position: absolute; left: 0; top: 0; z-index: 1; background: #fff; transition: all 0.5s; line-height: 1.5em;}
+#contact #information ul li:nth-child(2) .info_value mark:before{content: '010.6507.5024'}
+#contact #information .info_value mark:hover{background: none; }
+#contact #information .info_value mark:hover:before{width: 100%;}
+
+/* ---------------------------------
+반응형 CSS
+--------------------------------- */
+/* 태블릿 */
+@media screen and (min-width: 768px){
+    #contact #information .contact_info{display: flex; flex-wrap: wrap; margin-top: 75px;}
+    #contact #information .contact_info li{width: 40%;}
+
+}
+
+/* 노트북 */
+@media screen and (min-width: 1200px){
+    #contact #intro h2{font-size: 50px;}
+    #contact #intro .top_wrap p{font-size: 20px; line-height: 1.5;}
+    #contact #intro .cate{transform: rotate(0deg); margin: 0;}
+    #contact #intro .top_wrap{margin-top: 50px;}
+    #contact #information .contact_info li{width: 25%;}
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1900px){
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
