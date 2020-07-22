@@ -28,7 +28,7 @@ contact_inner CSS
 반응형 CSS
 --------------------------------- */
 /* 태블릿 */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 760px){
     #contact #information .contact_info{display: flex; flex-wrap: wrap; margin-top: 75px;}
     #contact #information .contact_info li{width: 40%;}
 

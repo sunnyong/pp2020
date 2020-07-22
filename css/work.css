@@ -47,8 +47,9 @@ LIST CSS
 /* ---------------------------------
 반응형 CSS
 --------------------------------- */
+
 /* 태블릿 */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 760px){
     #work #list ul li{width: 48%; margin-bottom: 5%;}
 }
 
